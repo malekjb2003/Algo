@@ -1,0 +1,21 @@
+ALGORITHM sentence
+VAR
+    ch:STRING[100]
+BEGIN
+    write("give the sentence")
+    read(ch)
+    s:=1;
+    s2:=0;
+    for i from 0 to ch.length-1 do
+        IF (ch[i]=" ") THEN
+            s=s+1;
+        ELSE_IF (ch[i] in {"a","e","o","u","i","y"}) THEN
+            s2=s2+1
+        
+        END_IF
+    END for
+    write("the number of words is",s);
+    write("the number of vowels is",s2);
+
+    
+END

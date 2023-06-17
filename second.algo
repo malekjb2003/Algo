@@ -1,0 +1,19 @@
+ALGORITHM sum
+VAR  tab : ARRAY_OF INTEGER[10];
+    tab2 : ARRAY_OF INTEGER[10];
+    i,j : INTEGER;
+BEGIN
+    tab:=(3,5,7,9);
+    tab2:=(5,8,3,2);
+    FOR i FROM 0 TO 3 STEP 1  DO 
+        FOR j FROM 0 TO 3 STEP 1  DO 
+            IF (tab[i]<>tab2[j]) THEN
+                sum:=sum+tab[i];
+            END_IF
+        END_FOR
+    END_FOR
+    write(sum);
+
+END
+
+
